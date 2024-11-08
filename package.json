@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "precompile": "npm run build",
+    "compile": "tsc --project tsconfig.json",
+    "postcompile": "node addJsExtension.js",
+    "build": "tsc --project tsconfig.json && node addJsExtension.js"
+  }
+}
