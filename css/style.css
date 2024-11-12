@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+
+  background-image: url('../fon.jpg'); /* Укажите путь к вашему изображению */
+  background-size: cover; /* Рисунок будет растягиваться, чтобы покрыть весь элемент */
+  background-position: center; /* Рисунок будет по центру */
+  background-repeat: no-repeat; /* Рисунок не будет повторяться */
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
+}
+
+.tetris {
+  
+}
+.button_all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #a1a1a1;
+}
+
+.right_panel {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+ 
+/* Стили для кнопки Пауза */
+.btn {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    border: none; /* Убираем стандартные границы */
+    width: 130px; /* Фиксированная ширина кнопки */
+    height: 40px; /* Фиксированная высота кнопки */
+    line-height: 40px; /* Выравнивание текста по центру кнопки по вертикали */
+    text-align: center; /* Выравнивание текста по горизонтали */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Отображение как блок */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px; /* Размер шрифта */
+    border-radius: 8px; /* Скругление углов */
+    cursor: pointer; /* Курсор в виде руки */
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход для фона и эффекта нажатия */
+  }
+  
+  /* Эффект при наведении */
+  .btn:hover {
+    background-color: #45a049; /* Тёмно-зеленый фон при наведении */
+  }
+  
+  /* Эффект при нажатии */
+  .btn:active {
+    transform: scale(0.98); /* Немного уменьшаем кнопку при нажатии */
+  }
+  
+  /* Стили для кнопки в состоянии паузы */
+  .btn.paused {
+    background-color: #f44336; /* Красный фон, если игра на паузе */
+  }
+  
+  .btn.paused:hover {
+    background-color: #d32f2f; /* Темно-красный при наведении */
+  }
+
+  /* Стили для кнопки в состоянии паузы */
+  .btn.started {
+    background-color: #f44336; /* Красный фон, если игра на паузе */
+  }
+  
+  .btn.started:hover {
+    background-color: #d32f2f; /* Темно-красный при наведении */
+  }
+  
